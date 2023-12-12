@@ -22,30 +22,39 @@
             android:src="@drawable/icone_contato"/>
 
         <EditText
-            android:id="@+id/editText_Usuario"
+            android:id="@+id/editText_UsuarioDeCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:hint="@string/usuario"/>
 
         <EditText
-            android:id="@+id/editText_Senha"
+            android:id="@+id/editText_SenhaDeCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:password="true"
             android:hint="@string/senha"/>
         <EditText
             android:id="@+id/editText_ConfirmarSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:password="true"
             android:hint="@string/confirmar_senha"/>
+
+        <TextView
+            android:id="@+id/textViewErroNoCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/messagemDeErro"
+            android:text="" />
 
         <Button
             android:id="@+id/button_Cadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/botoes"
             android:text="@string/cadastrar_se"/>
 
 

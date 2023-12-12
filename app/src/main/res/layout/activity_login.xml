@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/botoes"
             android:src="@drawable/icone_contato"/>
 
         <EditText
@@ -33,7 +34,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:password="true"
             android:hint="@string/senha"/>
+
+        <TextView
+            android:id="@+id/textViewErroDeLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/messagemDeErro"
+            android:text="" />
 
         <CheckBox
             android:id="@+id/checkbox_Login"
@@ -44,7 +53,7 @@
             android:id="@+id/button_Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/botoes"
             android:text="@string/login"/>
 
 
@@ -60,6 +69,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:clickable="true"
         android:text="@string/Nao_tem_conta_Cadastre_se" />
 
     <TextView
@@ -73,6 +83,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:gravity="center"
+        android:clickable="true"
         android:text="@string/recuperar_senha" />
 
 

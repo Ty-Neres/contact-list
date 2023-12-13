@@ -3,6 +3,8 @@ package com.example.contact_list
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.contact_list.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,9 +14,25 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
-        binding.adicionarContatos.setOnClickListener{
+        initRecyclerView()
+        binding.buttonAdicionarContatos.setOnClickListener{
             startActivity(Intent(this,NovoContatoActivity::class.java))
         }
     }
+
+    private fun initRecyclerView() {
+
+        binding.recyclerViewContatos.layoutManager = LinearLayoutManager(this)
+
+        binding.recyclerViewContatos.setHasFixedSize(true)
+
+        binding.recyclerViewContatos.adapter = RecyclerView.Adapter(adicionarContato())
+    }
+
+    private fun adicionarContato() = mutableListOf(
+
+    )
+
+
+
 }

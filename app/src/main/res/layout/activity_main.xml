@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-
-    <ListView
-        android:id="@+id/listViewContatos"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContatos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/adicionarContatos"/>
-    <TextView
-        android:id="@+id/textviewTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonAdicionarContatos"
+        android:layout_alignParentTop="true">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/adicionarContatos"
+        android:id="@+id/buttonAdicionarContatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -29,6 +27,7 @@
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/botoes"
         android:src="@drawable/adicionar_contato">
+
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </RelativeLayout>

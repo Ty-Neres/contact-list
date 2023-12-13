@@ -1,4 +1,4 @@
-package com.example.contact_list.Objetos
+package com.example.contact_list.Class
 
 object UsuarioPrincipal {
 

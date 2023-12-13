@@ -2,6 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="botoes">#009688</color>
+    <color name="cadastro">#FF9800</color>
     <color name="messagemDeErro">#E91E63</color>
 
 </resources>

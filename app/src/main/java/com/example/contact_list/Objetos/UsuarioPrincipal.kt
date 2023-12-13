@@ -4,5 +4,4 @@ object UsuarioPrincipal {
 
     var usuario : String = ""
     var senha : String = ""
-    var confirmarSenha = senha
 }

@@ -6,23 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ListView
-        android:id="@+id/listView_Contatos"
+        android:id="@+id/listViewContatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/adicionar_contatos"/>
+        android:layout_above="@+id/adicionarContatos"/>
+    <TextView
+        android:id="@+id/textviewTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/adicionar_contatos"
+        android:id="@+id/adicionarContatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/botoes"
         android:src="@drawable/adicionar_contato">
-
-
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 </RelativeLayout>

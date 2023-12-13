@@ -15,7 +15,7 @@ class CadastroActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonCadastrar.setOnClickListener{
-            var usuario = binding.editTextUsuarioDeCadastro.text.toString()
+            var usuario = binding.editTextUsuarioDeCadastro.text.toString().trim()
             var senha = binding.editTextSenhaDeCadastro.text.toString()
             var confirmarSenha = binding.editTextConfirmarSenha.text.toString()
 

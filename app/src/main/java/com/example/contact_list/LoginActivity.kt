@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonLogin.setOnClickListener {
-            var usuario = binding.editTextUsuario.text.toString()
+            var usuario = binding.editTextUsuario.text.toString().trim()
             var senha = binding.editTextSenha.text.toString()
 
             if (usuario.isNotEmpty() && senha.isNotEmpty()) {
@@ -27,9 +27,6 @@ class LoginActivity : AppCompatActivity() {
                 binding.textViewErroDeLogin.text = "Digite o usuário e a senha"
             }
         }
-            binding.textViewRecuperarSenha.setOnClickListener {
-            }
-
             binding.textViewCadastro.setOnClickListener {
                 startActivity(Intent(this, CadastroActivity::class.java))
             }

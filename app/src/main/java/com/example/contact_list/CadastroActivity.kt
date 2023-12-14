@@ -3,7 +3,6 @@ package com.example.contact_list
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.contact_list.Class.UsuarioPrincipal
 import com.example.contact_list.databinding.ActivityCadastroBinding
 
 class CadastroActivity : AppCompatActivity() {

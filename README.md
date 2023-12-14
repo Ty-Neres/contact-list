@@ -12,3 +12,5 @@
 #### Teste 0.2:
 - Concluí o procedimento de criação da conta,estabelecendo tanto o nome de usuário quanto a senha.em seguida o direcionando para a tela de contatos.
 
+### Versão 0.3:
+- Adicionada funcionalidade de adicionar contatos com nome e número.
